@@ -40,4 +40,18 @@
    cp ./_tmt/fastlane/.env.example ./fastlane/.env
    ```
 
-5. Download Provisioning Profiles within Xcode (make sure to use the correct Apple Developer Account) to have them ready for use.
+5. Install Fastlane (Ruby) dependencies:
+
+   ```sh
+   cd ./fastlane && \
+   bundle install && \
+   cd ..
+   ```
+
+6. Make iOS Build:
+
+   ```sh
+   make build-ios
+   ```
+
+Download Provisioning Profiles within Xcode (make sure to use the correct Apple Developer Account) to have them ready for use.

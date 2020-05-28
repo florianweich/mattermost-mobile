@@ -48,10 +48,15 @@
    cd ..
    ```
 
-6. Make iOS Build:
+6. Make an unsigned iOS build:
 
    ```sh
-   make build-ios
+   make unsigned-ios
    ```
 
-Download Provisioning Profiles within Xcode (make sure to use the correct Apple Developer Account) to have them ready for use.
+7. Sign output file with [iOS App Signer](https://github.com/DanTheMan827/ios-app-signer).  
+   Needs the Distribution Certificate and the corresponding Provisioning Profiles installed on the machine.
+
+8. Create ad-hoc manifest file (if needed) or update version string inside the manifest file on the web server. See example `./mattermost.plist`.
+
+9. Upload new ipa file to the web server.

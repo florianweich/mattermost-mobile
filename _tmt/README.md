@@ -28,12 +28,16 @@
    cp ./_tmt/AppIcon/ios/* ./assets/override/release/icons/ios
    ```
 
-3. Create local fastlane .env file:
+3. Copy config.json (contains predefined Mattermost server configurations for the app):
+
+   ```sh
+   cp ./_tmt/config.json ./assets/override
+   ```
+
+4. Create local fastlane .env file:
 
    ```sh
    cp ./_tmt/fastlane/.env.example ./fastlane/.env
    ```
 
-4. Configure Match credentials in `./fastlane/.env` for signing.
-
-[To be continued...]
+5. Download Provisioning Profiles within Xcode (make sure to use the correct Apple Developer Account) to have them ready for use.

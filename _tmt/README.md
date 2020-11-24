@@ -8,9 +8,9 @@
 
 3. Make sure the CocoaPods repo is up-to-date: `pod repo update`
 
-4. Run `make pre-run` to install all dependencies.
+4. Run `npm install` to install all dependencies.
 
-5. You can test run the app with `make run` in the iOS simulator and see if installation worked.
+5. You can test run the app with `npm run ios` in the iOS simulator and see if installation worked.
 
 ## TMT Style and Signing
 
@@ -51,7 +51,7 @@
 6. Make an unsigned iOS build:
 
    ```sh
-   make unsigned-ios
+   npm run build:ios-unsigned
    ```
 
 7. Sign output file with [iOS App Signer](https://github.com/DanTheMan827/ios-app-signer).  
